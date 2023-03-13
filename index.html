@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tris Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="game.js"></script>
+    <h2 class="is-size-1 block">Tris</h2>
+    <div class="play">
+        <button class="button is-primary" onclick="reset()" id="rtr" disabled>RESTART</button>
+    </div>
+    <div class="container columns is-mobile card">
+        <div class="leftc column is-one-third">
+            <div class="icon top" onclick="draw('b0')" id="b0">
+                <i class="fa-solid fa-xmark is-size-1"></i>
+            </div>
+            <div class="icon middle" onclick="draw('b1')" id="b1">
+                <i class="fa-solid fa-xmark is-size-1"></i>
+            </div>
+            <div class="icon bottom" onclick="draw('b2')" id="b2">
+                <i class="fa-solid fa-xmark is-size-1"></i>
+            </div>
+        </div>
+        <div class="middlec column is-one-third">
+            <div class="icon top" onclick="draw('b3')" id="b3">
+                <i class="fa-solid fa-xmark is-size-1"></i>
+            </div>
+            <div class="icon middle" onclick="draw('b4')" id="b4">
+                <i class="fa-solid fa-xmark is-size-1"></i>
+            </div>
+            <div class="icon b3 bottom" onclick="draw('b5')" id="b5">
+                <i class="fa-solid fa-xmark is-size-1"></i>
+            </div>
+        </div>
+        <div class="rightc column is-one-third">
+            <div class="icon top" onclick="draw('b6')" id="b6">
+                <i class="fa-solid fa-xmark is-size-1"></i>
+            </div>
+            <div class="icon middle" onclick="draw('b7')" id="b7">
+                <i class="fa-solid fa-xmark is-size-1"></i>
+            </div>
+            <div class="icon bottom" onclick="draw('b8')" id="b8">
+                <i class="fa-solid fa-xmark is-size-1"></i>
+            </div>
+        </div>
+    </div>
+    <div id="result">
+    </div>
+</body>
+</html>
