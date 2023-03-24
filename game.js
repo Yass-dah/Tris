@@ -24,6 +24,7 @@ function draw(box){
         el = document.getElementsByClassName('icon');
         for(i = 0; i < el.length; i++)
             el[i].setAttribute('onclick', '');
+        return;
     }
     if(!turn)
         document.getElementById('rtr').disabled = false;
